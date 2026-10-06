@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>1DAW Horario</title>
+    </head>
+    <!-- Horario de una clase pero ahora solamente se van a mostrar los profesores de esta clase ,
+    1 asignatura la pueden dar varios profesores-->
+    <body>
+        <form action="Horario.php" method="get">
+
+            <!-- Titulo -->
+            <div class="Cajita">
+                <div class="Cajita">
+                    <h1>HORARIO 1ºDAW</h1>
+                </div>
+
+                <!-- Profesores -->
+                <label for="profesores">Elige los profesores: </label><br/>
+                <input type="checkbox" value="Paco" name="profesores[]" id="Paco"/>Paco<br/>
+                <input type="checkbox" value="Isa" name="profesores[]" id="Isa"/>Isa<br/>                
+                <input type="checkbox" value="Alberto" name="profesores[]" id="Alberto"/>Alberto<br/>                
+                <input type="checkbox" value="Chema" name="profesores[]" id="Chema"/>Chema<br/>                
+                <input type="checkbox" value="Santi" name="profesores[]" id="Santi"/>Santi<br/><br/>                                           
+
+                <!-- Asignaturas -->
+                <label for="asignaturas">Elige la asignatura: </label><br/>
+                <input type="radio" value="SSINF" name="asignaturas" id="asignaturas"/>SSINF<br/>
+                <input type="radio" value="LMSG" name="asignaturas" id="asignaturas"/>LMSG<br/>
+                <input type="radio" value="BBDD" name="asignaturas" id="asignaturas"/>BBDD<br/>
+                <input type="radio" value="PROG" name="asignaturas" id="asignaturas"/>PROG<br/>
+                <input type="radio" value="EEDD" name="asignaturas" id="asignaturas"/>EEDD<br/>
+                <input type="radio" value="IPE 1" name="asignaturas" id="asignaturas"/>IPE 1<br/>
+                <input type="radio" value="INGP" name="asignaturas" id="asignaturas"/>INGLES<br/>
+                <input type="radio" value="TUTO" name="asignaturas" id="asignaturas"/>TUTO<br/> <br/>       
+                
+                <!-- Horas -->
+                <label for="horas">Horas: </label>
+                <input type="text" name="horas" placeholder="Ej: 20" id="horas"/><br/><br/>
+
+                <!-- Descripcion -->
+                <label for="descripcion">Descripcion: </label>
+                <textarea name="descripcion" id="descripcion"></textarea><br/><br/>
+
+                <!-- Enviar -->
+                <input type="submit" value="Enviar" id="Enviar"/>
+                <!-- Borrar -->
+                <input type="reset" value="Borrar" id="Borrar"/>
+            </div>
+        </form>     
+    </body>
+</html>
+

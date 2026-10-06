@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+}
+
+.Cajita h1{
+    text-align: center;
+}
+
+.Cajita{
+    background-color: rgb(171, 230, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px;
+}
